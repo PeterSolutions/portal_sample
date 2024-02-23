@@ -1,0 +1,166 @@
+:root {
+    --blue: #2200ff;
+    --paleYellow: #e2bd45;
+    --pink: #f76767;
+    --grisClaro: #e3e3e3;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Alata', sans-serif;
+}
+
+*, *:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.texto-blanco
+{
+    color: white;
+}
+
+/* header */
+header.contenido-header {
+    background-color: var(--blue);
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+}
+
+div.logo h1 {
+    font-size: 3rem;
+}
+
+ul.lista-menu {
+    display: flex;
+}
+
+ul.lista-menu li {
+    list-style: none;
+    padding: .5rem 2rem;
+}
+
+ul.lista-menu li a {
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+ /* contrenedor */
+
+ .contenedor {
+     width: 1200px;
+     margin: 0 auto;
+     max-width: 100%;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .contenedor .caja {
+     margin: 3rem 2rem;
+     width: 35rem;
+     height: 24rem;
+     padding: 1rem 1rem;
+     border: 2px solid black;
+     background-color: var(--paleYellow);
+     border-radius: 5px;
+ }
+
+ .caja h2 {
+     font-size: 2.5rem;
+     text-align: center;
+ }
+
+ /* tarjeta login */
+ div.tarjeta-login {
+     width: 35rem;
+     height: 40rem;
+     margin: 2rem auto;
+     background-color: var(--grisClaro);
+     border-radius: 5px;
+     padding: 1rem 0;
+     position: absolute;
+     top: 25%;
+     left: 37.2%;
+     display: none;
+     z-index: 10;
+ }
+
+
+.cabecera {
+    margin: .5rem auto;
+    padding: 1rem;
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecera h2 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.cabecera span {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.contenedor-campos {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.campo {
+   width: 80%;
+   margin: 1rem auto; 
+}
+
+.campo input {
+    width: 100%;
+    margin: .5rem auto;
+    padding: .5rem 0;
+    height:5rem;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+    font-family: 'Atala', sans-serif;
+    font-size: 2rem;
+    padding-left: 5%;
+}
+
+button.btnInises {
+    background-color: var(--pink);
+    border: none;
+    padding: 1.5rem 2rem;
+    width: 80%;
+    border-radius: .5rem;
+    margin-left: 10%;
+    cursor: pointer;
+    font-size: 2rem;
+    font-family: 'Atala', sans-serif;
+}
+
+.fondo-oscuro {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    display: none;
+}
+
